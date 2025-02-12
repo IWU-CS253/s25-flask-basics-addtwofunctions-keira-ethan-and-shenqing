@@ -21,6 +21,7 @@ def calc():
 
     return render_template('calc.html', current_value=current_value)
 
+
 @app.route('/wordstats', methods=['GET', 'POST'])
 def wordstatsindex():
     if request.method == 'POST':
