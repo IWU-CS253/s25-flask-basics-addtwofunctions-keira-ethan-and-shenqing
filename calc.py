@@ -1,5 +1,5 @@
 # calc.py
-
+import math
 def calculate(current_value, num, clear):
     if clear:
         return ''  # Clear the current value if clear button is pressed
@@ -11,6 +11,7 @@ def calculate(current_value, num, clear):
                 return str(eval(current_value))
             except:
                 return 'Error'
+
         else:
             # Append the pressed button value to the current value
             return current_value + num
